@@ -1,5 +1,5 @@
 # kchoi.io
-This is the source code for my site, kchoi. https://kchoi.io
+This is the source code for my site, kchoi. https://mrkchoi.github.io/kchoi.io/
 
 
 # What is this?

@@ -4,4 +4,4 @@ title: "Hello World"
 author: "Kenneth"
 ---
 
-Here we see **Tale's** pagination feature in action. It is set to 5 posts per page by default. Feel free to change this number in the `_config.yml` file!
+The site is live! This blog will serve as a repository of my personal explorations through software engineering.

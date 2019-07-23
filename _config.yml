@@ -1,0 +1,45 @@
+# Site settings
+title:          kchoi.io
+description:    "Minimal Jekyll theme for kchoi.io"
+# baseurl:        "/tale"
+url:            "https://kchoi.io"
+
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Kenneth Choi
+  url:          https://kchoi.io
+  email:        kennethichoi@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+
+remote_theme: chesterhow/tale
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

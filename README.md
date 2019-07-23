@@ -3,7 +3,7 @@ This is the source code for my site, kchoi. https://kchoi.io
 
 
 # What is this?
-This is the source for haseebq.com.
+This is the source for kchoi.io.
 
 ## Credits & Copyrights
 This site is generated with Jekyll and hosted via Github Pages.

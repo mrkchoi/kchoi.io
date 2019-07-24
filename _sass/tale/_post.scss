@@ -12,6 +12,14 @@
     }
   }
 
+  .post-info__time {
+    color: #aaa;
+    font-family: Palatino,"Palatino LT STD","Palatino Linotype","Book Antiqua","Georgia",serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: inherit;
+  }  
+
   &-title {
     color: $default-shade;
     font-family: $sans-serif;

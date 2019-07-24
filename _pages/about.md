@@ -5,6 +5,10 @@ author: "Kenneth"
 permalink: /about/
 ---
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I wanted a theme with a _book-ish_ vibe - minimalist and not _too_ modern.
+This blog serves primarily as a repository of my personal learning journey through the world of software engineering. Other topics and musings may be sprinkled about.
 
 Thanks for reading!
+
+<!-- [Github](https://www.github.com/mrkchoi){target="_blank"} -->
+<a class="link--about" href="https://www.github.com/mrkchoi" target="_blank">Github</a>  
+<a class="link--about" href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">LinkedIn</a>

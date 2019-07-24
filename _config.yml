@@ -30,6 +30,7 @@ plugins:
   - jekyll-seo-tag
   # - jemoji #Uncomment this to allow emoji in your post
 
+highlighter: rouge
 
 remote_theme: chesterhow/tale
 

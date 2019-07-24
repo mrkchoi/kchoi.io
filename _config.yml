@@ -2,7 +2,7 @@
 title:          kchoi.io
 description:    "Minimal Jekyll theme for kchoi.io"
 # baseurl:        "/tale"
-url:            "https://kchoi.io"
+url:            "http://kchoi.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X

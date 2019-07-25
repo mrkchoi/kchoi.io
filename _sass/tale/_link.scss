@@ -2,4 +2,26 @@
   // &--about {
   //   text-align: center;
   // }
+
+  &--icon {
+    font-size: 2rem;
+    color: black;
+    margin-right: 1rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      text-decoration: none !important;
+      opacity: .6;
+    }
+  }
+}
+
+
+.about__link-container {
+  display: flex;
+}
+
+.footer__link-container {
+  display: flex;
+  justify-content: center;
 }

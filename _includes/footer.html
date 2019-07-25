@@ -1,5 +1,11 @@
 <footer>
-  <span>
-    &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll.
-  </span>
+  <span>&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll.</span>
+  <div class="footer__link-container">
+    <a class="link--about link--icon" href="https://www.github.com/mrkchoi" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="link--about link--icon" href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
 </footer>

@@ -5,9 +5,9 @@ author: "Kenneth"
 permalink: /about/
 ---
 
-Kenneth Choi is a software engineering living in San Francisco. 
+Kenneth Choi is a software engineering in San Francisco.  
 
-The content within serves as a repository of personal learnings through the world of software engineering. Other topics and musings may be sprinkled about.
+In his blog, he explores software, technology, web developement, and altruism. Other topics and musings may be sprinkled about.  
 
 Thanks for reading.
 

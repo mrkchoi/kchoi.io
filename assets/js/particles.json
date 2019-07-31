@@ -13,8 +13,8 @@
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 1,
-        "color": "#C0C0C0"
+        "width": 2,
+        "color": "#fff"
       },
       "polygon": {
         "nb_sides": 5
@@ -49,7 +49,7 @@
       "enable": true,
       "distance": 300,
       "color": "#C0C0C0",
-      "opacity": 0.1,
+      "opacity": 0.2,
       "width": 1
     },
     "move": {

@@ -2853,7 +2853,7 @@ input, select, textarea {
 	}
 
 	#header .inner {
-		padding-top: 2rem !important;
+		padding-top: 3rem !important;
 	}
 
 		#header .logo {
@@ -3397,6 +3397,7 @@ header {
 	justify-content: center;
 	align-items: flex-start;
 	/* text-align: center; */
+  padding-bottom: 3rem;
 
 }
 

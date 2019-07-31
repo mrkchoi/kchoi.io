@@ -4,8 +4,6 @@ title: "Resume"
 author: "Kenneth"
 permalink: /resume/
 ---
-
-# **KENNETH CHOI**  
 408-239-3088  
 kennethichoi@gmail.com  
 www.kchoi.io/portfolio  

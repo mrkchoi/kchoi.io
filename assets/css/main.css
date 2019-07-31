@@ -174,10 +174,15 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.landing-header__img-wrapper {
+				display: none;
+			}
 			h1 {
 				font-size: 2em;
 				margin: 0 0 1em 0;
 			}
+
+
 
 		}
 
@@ -1772,6 +1777,8 @@ input, select, textarea {
 							padding-top: 2em;
 						}
 
+
+
 		}
 
 /* Section/Article */
@@ -2612,7 +2619,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0.9;
 				}
 
 				.tiles article > .image:after {
@@ -2728,7 +2735,7 @@ input, select, textarea {
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
-				opacity: 0.3;
+				opacity: 0.2;
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
@@ -2748,7 +2755,15 @@ input, select, textarea {
 			}
 
 		* + .tiles {
-			margin-top: 2em;
+			margin-top: 0em;
+		}
+
+		.tiles .content p {
+			margin-bottom: 1rem;
+		}
+
+		.tiles .content p:last-of-type {
+			font-size: 1.1rem;
 		}
 
 		body.is-preload .tiles article {
@@ -3334,7 +3349,7 @@ input, select, textarea {
 header {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row-reverse;
+	/* flex-direction: row-reverse; */
 }
 
 .landing-header__img {
@@ -3345,4 +3360,55 @@ header {
 
 .landing-header-md {
 	margin-bottom: 1rem;
+}
+
+.landing-skills__main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.landing-skills__main i {
+  font-size: 4rem;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.landing-header__text-wrapper {
+	max-width: calc(100% - 160px);
+}
+
+.landing-about-inner-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	/* text-align: center; */
+
+}
+
+.landing-about-content {
+	max-width: 60%;
+}
+
+@media screen and (max-width: 736px) {
+	.landing-header__text-wrapper {
+		max-width: 100%;
+	}
+
+	.landing-about-content {
+		max-width: 100%;
+	}
+
+	.landing-skills__main i {
+		font-size: 3.5rem;
+		display: inline-block;
+		padding: 1.5rem;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.landing-about-content {
+		max-width: 75%;
+	}
 }

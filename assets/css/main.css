@@ -3412,3 +3412,11 @@ header {
 		max-width: 75%;
 	}
 }
+
+
+/* particles */
+
+canvas.particles-js-canvas-el {
+  position: fixed;
+  z-index: -10;
+}

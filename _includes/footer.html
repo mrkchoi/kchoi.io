@@ -1,11 +1,48 @@
-<footer>
-  <span>&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> Made with <span class="footer__heart">&hearts;</span> by {{ site.author.name }}.</span>
-  <div class="footer__link-container">
-    <a class="link--about link--icon" href="https://www.github.com/mrkchoi" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a class="link--about link--icon" href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <h2>Get in touch</h2>
+      <form method="post" action="https://mailthis.to/kennethichoi@gmail.com">
+        <div class="fields">
+          <div class="field half">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="field half">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="field">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission!">
+          <input type="hidden" name="_honeypot" value="">
+          <input type="hidden" name="_after" value="https://www.kchoi.io">
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send" class="primary" /></li>
+        </ul>
+      </form>
+    </section>
+    <section>
+      <h2>Follow</h2>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.github.com/mrkchoi" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">500px</span></a></li>
+        <li><a href="tel: 4082393088" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+        <li><a href="mailto: kennethichoi@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+    </section>
+    <ul class="copyright">
+      <li>
+        <span>&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> Made with <span
+          class="footer__heart">&hearts;</span> by {{ site.author.name }}.</span>
+      </li>
+    </ul>
   </div>
 </footer>
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>

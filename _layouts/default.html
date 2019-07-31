@@ -3,14 +3,15 @@
 
   {% include head.html %}
 
-  <body>
-
-    {% include navigation.html %}
-
-    <main>
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
+  <body class="is-preload">
+    <div id="wrapper">
+      {% include navigation.html %}
+      
+      <main>
+        {{ content }}
+      </main>
+      
+      {% include footer.html %}
+    </div>
   </body>
 </html>

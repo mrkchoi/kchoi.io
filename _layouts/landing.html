@@ -5,28 +5,28 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
+		<!-- Header
 		<header id="header">
 			<div class="inner">
 
 				<!-- Logo -->
-				<a href="{{ site.baseurl }}/" class="logo">
+				<!-- <a href="{{ site.baseurl }}/" class="logo">
 					<span class="symbol"><img src="../assets/images/logo.svg" alt="" /></span><span class="title">Kenneth
 						Choi</span>
 				</a>
 
 				<!-- Nav -->
-				<nav>
+				<!-- <nav>
 					<ul>
 						<li><a href="#menu">Menu</a></li>
 					</ul>
 				</nav>
 
 			</div>
-		</header>
+		</header> -->
 
 		<!-- Menu -->
-		<nav id="menu">
+		<!-- <nav id="menu">
 			<h2>Kenneth Choi</h2>
 			<ul>
 				<li><a href="{{ site.baseurl }}">Home</a></li>
@@ -34,7 +34,10 @@
 				<li><a href="{{ site.baseurl }}/">Blog</a></li>
 				<li><a href="{{ '/resume' | prepend: site.baseurl }}">Resume</a></li>
 			</ul>
-		</nav>
+		</nav> -->
+
+	{%include navigation.html %}
+
 
 		<!-- Main -->
 		<div id="main">
@@ -42,7 +45,7 @@
 				<header>
 					<div class="landing-header__text-wrapper">
 						<h1>Hello, I'm Kenneth Choi. <br />I'm a software engineer in San Francisco.</h1>
-						<p>Feel free to check out my work and see <strong><a href="../assets/Kenneth Choi Resume 2019.pdf" target="_blank">my resume</a></strong>. Thanks for stopping by!</p>
+						<p>Feel free to check out my work and see <strong><a href="../assets/Kenneth_Choi_Software_Engineer_Resume_2019.pdf" target="_blank">my resume</a></strong>. Thanks for stopping by!</p>
 					</div>
 					<div class="landing-header__img-wrapper">
 						<img src="../assets/images/kenneth_choi_software_engineer_headshot.jpeg" alt="" class="landing-header__img">
@@ -118,7 +121,7 @@
 					</div>
 				</section>
 
-				<section class="landing-about">
+				<section class="landing-about" id="about">
 					<h2>About</h2>
 					<div class="landing-about-inner-wrapper">	
 						<div class="landing-about-content">

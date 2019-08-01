@@ -3415,6 +3415,11 @@ header {
 	transform: rotate(-7deg);
 }
 
+#about {
+	margin-top: -7rem;
+	padding-top: 7rem;
+}
+
 @media screen and (max-width: 1024px) {
 	.landing-about-content {
 		max-width: 75%;

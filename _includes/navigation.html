@@ -17,7 +17,7 @@
 
     <!-- Logo -->
     <a href="{{ site.baseurl }}/" class="logo">
-      <span class="symbol"><img src="../assets/" alt="" /></span><span class="title">Kenneth Choi</span>
+      <span class="symbol"><img src="../assets/images/logo.svg" alt="" /></span><span class="title">Kenneth Choi</span>
     </a>
 
     <!-- Nav -->
@@ -34,9 +34,10 @@
 <nav id="menu">
   <h2>Menu</h2>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="{{ '/resume' | prepend: site.baseurl }}">Resume</a></li>
+    <li><a href="{{ site.baseurl }}">Home</a></li>
+    <li><a href="{{ '#about' | prepend: site.baseurl }}">About</a></li>
+    <!-- <li><a href="blog.html">Blog</a></li> -->
+    <li><a target="_blank" href="{{ '/assets/Kenneth_Choi_Software_Engineer_Resume_2019.pdf' | prepend: site.baseurl }}">Resume</a></li>
+    <li><a href="{{ '#footer' | site.baseurl }}">Contact</a></li>
   </ul>
 </nav>

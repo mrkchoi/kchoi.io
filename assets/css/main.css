@@ -3035,6 +3035,16 @@ input, select, textarea {
 			overflow-y: auto;
 		}
 
+		#menu .inner h2 {
+			margin-bottom: 0;
+			color: #f6f6f6;
+		}
+
+		#menu .inner h4 {
+			color: #aeaeae;
+		}
+
+
 			#menu > .inner > ul {
 				list-style: none;
 				margin: 0 0 1em 0;

@@ -2575,6 +2575,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		postiion: relative;
 		margin: -2.5em 0 0 -2.5em;
+		margin-bottom: 6rem;
 	}
 
 		.tiles article {
@@ -2766,6 +2767,18 @@ input, select, textarea {
 			font-size: 1.1rem;
 		}
 
+.tile-links-wrapper {
+  position: absolute;
+  bottom: -4rem;
+}
+
+	.tile-links-btn {
+		/* border: none;
+		display: inline;
+		padding: 0;
+		box-shadow: none; */
+	}
+
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
@@ -2802,8 +2815,18 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(50% - 2.5em);
-					margin: 2.5em 0 0 2.5em;
+					margin: 2.5em 0 2rem 2.5em;
 				}
+			.tiles article > a h2 br {
+				display: block;
+			}
+
+
+			.tile-links-wrapper {
+				position: absolute;
+				bottom: -2.8rem;
+				font-size: 1.2rem;
+			}
 
 		}
 
@@ -2815,8 +2838,11 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(50% - 1.25em);
-					margin: 1.25em 0 0 1.25em;
+					/* margin: 1.25em 0 0 1.25em; */
+					margin: 1.25em 0 4rem 0;
+
 				}
+
 
 					.tiles article:hover > .image {
 						-moz-transform: scale(1.0);
@@ -2825,6 +2851,7 @@ input, select, textarea {
 						transform: scale(1.0);
 						opacity: 0.3;
 					}
+
 
 		}
 
@@ -2836,11 +2863,19 @@ input, select, textarea {
 
 				.tiles article {
 					width: 100%;
-					margin: 1.25em 0 0 0;
+					margin: 1.25em 0 4rem 0;
 				}
 
-			.tiles article > a h2 br {
-				display: block;
+
+
+			.tiles article.style3 > .image:before {
+				filter: brightness(1.2);
+			}
+			.tiles article.style2 > .image:before {
+				filter: brightness(1.2);
+			}
+			.tiles article.style6 > .image:before {
+				filter: brightness(1.5);
 			}
 
 		}
@@ -3259,6 +3294,15 @@ input, select, textarea {
 						margin-left: 0;
 					}
 
+		p.footer-contact-info, p.footer-contact-info a {
+			font-size: 1.1rem;
+		}
+
+		footer a span {
+			color: #555;
+			font-size: 1.1rem;
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#footer {
@@ -3384,6 +3428,11 @@ header {
 
 .landing-header-md {
 	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+.landing-skills {
+	margin-bottom: 4rem;
 }
 
 .landing-skills__main {
@@ -3445,11 +3494,15 @@ header {
 		max-width: 100%;
 	}
 
+	.landing-skills {
+		margin-top: 4rem;
+	}
 	.landing-skills__main i {
 		font-size: 3.5rem;
 		display: inline-block;
 		padding: 1.5rem;
 	}
+
 
 }
 

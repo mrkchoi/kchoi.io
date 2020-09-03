@@ -49,7 +49,7 @@ _An interactive data visualization for sorting algorithms._
 
 ### **Front End Developer**  
 {:.resume__header}
-Nika Digital Agency  
+Facebook  
 _Oct 2019 - Present_
 
 * Contributed to production web applications to facilitate logistics/supply chain asset management using ​Hack/PHP, React, Undux/Redux, JavaScript, GraphQL, Relay, and HTML5/CSS3

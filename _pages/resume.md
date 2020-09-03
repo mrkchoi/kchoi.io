@@ -47,7 +47,7 @@ _An interactive data visualization for sorting algorithms._
 
 ## **EXPERIENCE:**
 
-### **Front End Developer**  
+### **Software Engineer**  
 {:.resume__header}
 Facebook  
 _Oct 2019 - Present_

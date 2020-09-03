@@ -50,16 +50,16 @@ _An interactive data visualization for sorting algorithms._
 ### **Front End Developer**  
 {:.resume__header}
 Nika Digital Agency  
-_Oct 2017 - Present_
+_Oct 2019 - Present_
 
-* Deployed more than 20 web applications and landing pages for Fortune 500 clients.
-* Developed and maintained production codebase while adhering to wireframes, mockups, style guides and documentation standards.
-* Utilized Agile methodology to manage development lifecycle through discovery, programming, testing and launch phases.  
+* Contributed to production web applications to facilitate logistics/supply chain asset management using ​Hack/PHP, React, Undux/Redux, JavaScript, GraphQL, Relay, and HTML5/CSS3
+* Developed ​remote asset collection​ workflow resulting in +​ $9mil in assets​ returned to inventory for H1 2020.
+* Coordinated with business and warehouse ops to ensure product alignment on various logistics/supply chain workflows
 
 ### **Marketing Manager**  
 {:.resume__header}
 Nika Digital Agency  
-_Aug 2016 - Sep 2017_  
+_Aug 2016 - Sep 2019_  
 
 * Leveraged JavaScript and Excel to implement data analytics dashboards, reducing agency work hours by 16 hours / month.
 * Directed SEM management portfolio to Google Partner status with average +1140% increase in monthly managed spend.
@@ -67,8 +67,9 @@ _Aug 2016 - Sep 2017_
 
 ## **EDUCATION:**
 
+**AppAcademy** - 2019 - Software Engineering
 **University of California, Los Angeles** - BA Sociology, 2007-2011  
-**AppAcademy** - 2019 - Rigorous 1000-hour software engineering course with <3% acceptance rate
+
 
 
 

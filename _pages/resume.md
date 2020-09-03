@@ -13,6 +13,26 @@ www.kchoi.io/portfolio
 ## **SKILLS:**    
 Ruby, Rails, JavaScript, React, Redux, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
 
+## **EXPERIENCE:**
+
+### **Software Engineer**  
+{:.resume__header}
+Facebook  
+_Oct 2019 - Present_
+
+* Contributed to production web applications to facilitate logistics/supply chain asset management using ​Hack/PHP, React, Undux/Redux, JavaScript, GraphQL, Relay, and HTML5/CSS3
+* Developed ​remote asset collection​ workflow resulting in +​ $9mil in assets​ returned to inventory for H1 2020.
+* Coordinated with business and warehouse ops to ensure product alignment on various logistics/supply chain workflows
+
+### **Marketing Manager**  
+{:.resume__header}
+Nika Digital Agency  
+_Aug 2016 - Sep 2019_  
+
+* Leveraged JavaScript and Excel to implement data analytics dashboards, reducing agency work hours by 16 hours / month.
+* Directed SEM management portfolio to Google Partner status with average +1140% increase in monthly managed spend.
+* Led tactical execution of marketing campaigns to win client partnerships with Microsoft, Amazon Labs, Samsung & Huawei.
+
 ## **PROJECTS:**
 ### **Aerbnb**  <a href="https://aerbnb.herokuapp.com" target="_blank">live</a> | <a href="https://github.com/mrkchoi/airbnb_clone" target="_blank">github</a>  
 {:.resume__header}
@@ -44,26 +64,6 @@ _An interactive data visualization for sorting algorithms._
 * Designed data visualizations in D3.js for dynamic, realtime rendering of Selection, Insertion, Radix, Merge, Quick, Heap, Shell and Bubble Sort algorithms.
 * Optimized codebase with class-based architecture and Object Oriented Programming principles to ensure DRY code.
 * Packaged script to store progressive state of recursive algorithms for efficient DOM rendering.
-
-## **EXPERIENCE:**
-
-### **Software Engineer**  
-{:.resume__header}
-Facebook  
-_Oct 2019 - Present_
-
-* Contributed to production web applications to facilitate logistics/supply chain asset management using ​Hack/PHP, React, Undux/Redux, JavaScript, GraphQL, Relay, and HTML5/CSS3
-* Developed ​remote asset collection​ workflow resulting in +​ $9mil in assets​ returned to inventory for H1 2020.
-* Coordinated with business and warehouse ops to ensure product alignment on various logistics/supply chain workflows
-
-### **Marketing Manager**  
-{:.resume__header}
-Nika Digital Agency  
-_Aug 2016 - Sep 2019_  
-
-* Leveraged JavaScript and Excel to implement data analytics dashboards, reducing agency work hours by 16 hours / month.
-* Directed SEM management portfolio to Google Partner status with average +1140% increase in monthly managed spend.
-* Led tactical execution of marketing campaigns to win client partnerships with Microsoft, Amazon Labs, Samsung & Huawei.
 
 ## **EDUCATION:**
 

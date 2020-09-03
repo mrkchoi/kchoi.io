@@ -11,7 +11,7 @@ www.kchoi.io/portfolio
 <a href="https://github.com/mrkchoi" target="_blank">GitHub</a>  
 
 ## **SKILLS:**    
-Ruby, Rails, JavaScript, React, Redux, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
+Hack, PHP, Ruby, Rails, JavaScript, React, Redux / Undux, GraphQL, Relay, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
 
 ## **EXPERIENCE:**
 

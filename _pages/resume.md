@@ -9,9 +9,10 @@ kennethichoi@gmail.com
 www.kchoi.io/portfolio  
 <a href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">LinkedIn</a>  
 <a href="https://github.com/mrkchoi" target="_blank">GitHub</a>  
+  
 
 
-## **SKILLS:**    
+## **SKILLS:**
 Hack, PHP, Ruby, Rails, JavaScript, React, Redux / Undux, GraphQL, Relay, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
 
 
@@ -69,7 +70,7 @@ _An interactive data visualization for sorting algorithms._
 
 ## **EDUCATION:**
 
-**AppAcademy** - 2019 - Software Engineering
+**AppAcademy** - 2019 - Software Engineering  
 
 **University of California, Los Angeles** - BA Sociology, 2007-2011  
 

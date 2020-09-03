@@ -10,11 +10,12 @@ www.kchoi.io/portfolio
 <a href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">LinkedIn</a>  
 <a href="https://github.com/mrkchoi" target="_blank">GitHub</a>  
 
+
 ## **SKILLS:**    
 Hack, PHP, Ruby, Rails, JavaScript, React, Redux / Undux, GraphQL, Relay, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
 
-## **EXPERIENCE:**
 
+## **EXPERIENCE:**
 ### **Software Engineer**  
 {:.resume__header}
 Facebook  
@@ -32,6 +33,7 @@ _Aug 2016 - Sep 2019_
 * Leveraged JavaScript and Excel to implement data analytics dashboards, reducing agency work hours by 16 hours / month.
 * Directed SEM management portfolio to Google Partner status with average +1140% increase in monthly managed spend.
 * Led tactical execution of marketing campaigns to win client partnerships with Microsoft, Amazon Labs, Samsung & Huawei.
+
 
 ## **PROJECTS:**
 ### **Aerbnb**  <a href="https://aerbnb.herokuapp.com" target="_blank">live</a> | <a href="https://github.com/mrkchoi/airbnb_clone" target="_blank">github</a>  

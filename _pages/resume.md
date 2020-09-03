@@ -70,6 +70,7 @@ _An interactive data visualization for sorting algorithms._
 ## **EDUCATION:**
 
 **AppAcademy** - 2019 - Software Engineering
+
 **University of California, Los Angeles** - BA Sociology, 2007-2011  
 
 

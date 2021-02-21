@@ -1,0 +1,31 @@
+{
+  "name": "kchoi",
+  "version": "1.0.0",
+  "description": "Kenneth Choi Software Engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkchoi/kchoi.io.git"
+  },
+  "keywords": [
+    "Kenneth Choi",
+    "Software Engineer",
+    "React",
+    "Redux",
+    "Ruby",
+    "Rails",
+    "Web Developer"
+  ],
+  "author": "Kenneth Choi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrkchoi/kchoi.io/issues"
+  },
+  "homepage": "https://github.com/mrkchoi/kchoi.io#readme",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>LeetCode 110. Balanced Binary Tree | kchoi.io</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="LeetCode 110. Balanced Binary Tree" />
+<meta name="author" content="Kenneth" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LeetCode 110. Balanced Binary Tree (LeetCode Easy)" />
+<meta property="og:description" content="LeetCode 110. Balanced Binary Tree (LeetCode Easy)" />
+<link rel="canonical" href="http://localhost:4000/2019-07-24/balanced-binary-tree" />
+<meta property="og:url" content="http://localhost:4000/2019-07-24/balanced-binary-tree" />
+<meta property="og:site_name" content="kchoi.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-24T00:00:00-07:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/2019-07-24/balanced-binary-tree","headline":"LeetCode 110. Balanced Binary Tree","dateModified":"2019-07-24T00:00:00-07:00","datePublished":"2019-07-24T00:00:00-07:00","author":{"@type":"Person","name":"Kenneth"},"description":"LeetCode 110. Balanced Binary Tree (LeetCode Easy)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019-07-24/balanced-binary-tree"},"@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript>
+  <link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="kchoi.io" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body class="is-preload">
+    <div id="wrapper">
+      <!-- <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">kchoi.io</h2>
+    </a>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/resume">Resume</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+
+<header id="header">
+  <div class="inner">
+
+    <!-- Logo -->
+    <a href="/" class="logo">
+      <span class="symbol"><img src="../assets/images/logo.svg" alt="" /></span><span class="title">Kenneth Choi</span>
+    </a>
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+  <h2>Kenneth Choi</h2>
+  <h4>Software Engineer</h4>
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <!-- <li><a href="blog.html">Blog</a></li> -->
+    <li><a target="_blank" href="/assets/Kenneth_Choi_Software_Engineer_Resume_2019.pdf">Resume</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>
+      
+      <main>
+        <div class="post">
+  <!-- <div class="post-info">
+    <span>Written by</span>
+    
+        Kenneth
+    
+    
+  </div> -->
+  
+  
+  <time class="post-info__time"  datetime="2019-07-24 00:00:00 -0700">July 24, 2019</time>
+  
+  <h1 class="post-title">LeetCode 110. Balanced Binary Tree</h1>
+  <div class="post-line"></div>
+
+  <!-- ### Construct a Binary Tree from Preorder & Inorder Traversal (JavaScript) -->
+<h3 id="leetcode-110-balanced-binary-tree-leetcode-easy">LeetCode 110. Balanced Binary Tree (LeetCode Easy)</h3>
+
+<p>Given a binary tree, determine if it is height-balanced.</p>
+
+<p>For this problem, a height-balanced binary tree is defined as:</p>
+
+<p>a binary tree in which the depth of the two subtrees of every node never differ by more than 1.</p>
+
+<p>Example 1:</p>
+
+<p>Given the following tree</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">]:</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">    <span class="mi">3</span>
+   <span class="o">/</span> <span class="o">\</span>
+  <span class="mi">9</span>  <span class="mi">20</span>
+    <span class="o">/</span>  <span class="o">\</span>
+   <span class="mi">15</span>   <span class="mi">7</span></code></pre></figure>
+
+<p>Return true.</p>
+
+<p>Example 2:</p>
+
+<p>Given the following tree</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]:</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">       <span class="mi">1</span>
+      <span class="o">/</span> <span class="o">\</span>
+     <span class="mi">2</span>   <span class="mi">2</span>
+    <span class="o">/</span> <span class="o">\</span>
+   <span class="mi">3</span>   <span class="mi">3</span>
+  <span class="o">/</span> <span class="o">\</span>
+ <span class="mi">4</span>   <span class="mi">4</span></code></pre></figure>
+
+<p>Return false.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">isBalanced</span><span class="p">(</span><span class="nx">root</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">root</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">heights</span> <span class="o">=</span> <span class="p">[];</span>
+  
+  <span class="kd">let</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">queue</span> <span class="o">=</span> <span class="p">[</span><span class="nx">root</span><span class="p">];</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">queue</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">root</span><span class="p">.</span><span class="nx">left</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">root</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="nx">heights</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">height</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">root</span><span class="p">.</span><span class="nx">left</span> <span class="o">||</span> <span class="nx">root</span><span class="p">.</span><span class="nx">right</span><span class="p">)</span> <span class="nx">height</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(...</span><span class="nx">heights</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(...</span><span class="nx">heights</span><span class="p">);</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2019-07-24/bst" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/2019-07-23/uniq_subs-largest_continuous_sum" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+      </main>
+      
+      <!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <h2>Get in touch</h2>
+      <form method="post" action="https://formsubmit.co/kennethichoi@gmail.com">
+        <div class="fields">
+          <div class="field half">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="field half">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="field">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission!">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://www.kchoi.io">
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send" class="primary" /></li>
+        </ul>
+      </form>
+    </section>
+    <section>
+      <h2>Follow</h2>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://www.github.com/mrkchoi" target="_blank" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://angel.co/kenneth-choi-1" target="_blank" class="icon brands style2 fa-angellist"><span class="label">AngelList</span></a></li>
+      </ul>
+      <div>
+        <p class="footer-contact-info">
+          <strong>Kenneth Choi</strong>
+          <br />
+          Software Engineer
+          <br />
+          <strong>Phone:</strong>
+          <br />
+          <a href="tel: 4082393088" class=""><span class="">(408) 239-3088</span></a>
+          <br />
+          <strong>Email:</strong>
+          <br />
+          <a href="mailto: kennethichoi@gmail.com" class=""><span class="label">kennethichoi@gmail.com</span></a>
+        </p>
+      </div>
+    </section>
+    <ul class="copyright">
+      <li>
+        <span>&copy; <time datetime="2019-07-31 23:18:44 -0700">2019</time> Made with <span
+          class="footer__heart">&hearts;</span> by Kenneth Choi.</span>
+      </li>
+    </ul>
+  </div>
+</footer>
+<!-- Scripts -->
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/particle_lib.js"></script>
+<script src="../assets/js/main.js" defer="defer"></script>
+<script src="../assets/js/particles.js"></script>
+    </div>
+  </body>
+</html>

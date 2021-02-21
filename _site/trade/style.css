@@ -1,0 +1,65 @@
+body {
+  font-size: 12px;
+  /* background-color: black;
+  color: white; */
+}
+
+.main {
+  max-width: 450px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  /* color: grey; */
+}
+
+.pure-form label {
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+input.pure-input-1 {
+  margin-bottom: 4px !important;
+  /* background-color: black; */
+}
+
+.table {
+  width: 100%;
+}
+
+.table td,
+.table th {
+  text-align: center !important;
+}
+
+.table td {
+  cursor: pointer;
+  text-align: center !important;
+}
+
+.isCopied {
+  background-color: palegreen !important;
+}
+
+.positionSizeErrorMessage {
+  display: none;
+}
+
+.positionSizeWarningMessage {
+  display: none;
+}
+
+.positionSizeWarningCell {
+  background-color: #fffaf3 !important;
+  color: #573a08 !important;
+}
+
+.isWarningShown {
+  display: block;
+}
+
+.isErrorShown {
+  display: block;
+}

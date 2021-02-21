@@ -13,7 +13,7 @@ permalink: /trade/
       <div class="ui three column grid">
         <div class="column">
           <div class="field">
-            <label for="accountBalance">Account Balance:</label>
+            <label for="accountBalance">Acct Balance:</label>
             <input
               type="text"
               inputmode="decimal"

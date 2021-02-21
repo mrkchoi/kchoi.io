@@ -63,3 +63,9 @@ input.pure-input-1 {
 .isErrorShown {
   display: block;
 }
+
+@media screen and (max-width: 767px) {
+  input, select, textarea {
+    font-size: 16px;
+  }
+}

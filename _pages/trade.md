@@ -132,4 +132,3 @@ permalink: /trade/
     Position size exceeds account balance
   </div>
 </div>
-<script src="./pesl_main.js"></script>

@@ -2,12 +2,14 @@
   // DOM elements
   const accountBalanceElement = document.querySelector("#accountBalance");
   const riskPercentageElement = document.querySelector("#riskPercentage");
-  const riskRewardRatioElement = document.querySelector("#riskRewardRatio");
   const entryElement = document.querySelector("#entry");
   const stopLossElement = document.querySelector("#stopLoss");
   const numSharesElement = document.querySelector("#numShares");
   const positionSizeElement = document.querySelector("#positionSize");
-  const profitTargetElement = document.querySelector("#profitTarget");
+  const ProfitTarget1_1_Element = document.querySelector("#profitTarget1_1");
+  const ProfitTarget2_1_Element = document.querySelector("#profitTarget2_1");
+  const ProfitTarget3_1_Element = document.querySelector("#profitTarget3_1");
+  const ProfitTarget4_1_Element = document.querySelector("#profitTarget4_1");
   const positionSizeWarningElement = document.querySelector(
     ".positionSizeWarningMessage"
   );
@@ -20,13 +22,15 @@
       // inputs
       this.accountBalance = this.getAccountBalanceFromLocalStorage();
       this.riskPercentage = this.getRiskPercentageFromLocalStorage();
-      this.riskRewardRatio = this.getRiskRewardRatioFromLocalStorage();
       this.entry;
       this.stopLoss;
       this.isLongPos;
 
       // outputs
-      this.profitTarget;
+      this.profitTarget1_1;
+      this.profitTarget2_1;
+      this.profitTarget3_1;
+      this.profitTarget4_1;
       this.positionSize;
       this.numShares;
     }
@@ -39,10 +43,6 @@
       return localStorage.getItem("riskPercentage") ?? 1;
     }
 
-    getRiskRewardRatioFromLocalStorage() {
-      return localStorage.getItem("riskRewardRatio") ?? 2;
-    }
-
     updateAccountBalance(value) {
       this.accountBalance = parseFloat(value);
       localStorage.setItem("accountBalance", value);
@@ -51,11 +51,6 @@
     updateRiskPercentage(value) {
       this.riskPercentage = parseFloat(value);
       localStorage.setItem("riskPercentage", value);
-    }
-
-    updateRiskRewardRatio(value) {
-      this.riskRewardRatio = parseFloat(value);
-      localStorage.setItem("riskRewardRatio", value);
     }
 
     calculateMaxRisk() {
@@ -77,33 +72,86 @@
       return (numShares * parseFloat(this.entry)).toFixed(2);
     }
 
-    calculateProfitTarget(numShares) {
+    calculateAndRenderProfitTargets(numShares) {
       const targetRewardInDollars = (
-        parseFloat(this.accountBalance) * parseFloat(this.riskRewardRatio / 100)
+        parseFloat(this.accountBalance) * parseFloat(1 / 100)
       ).toFixed(2);
 
-      return (this.isLongPos
-        ? parseFloat(this.entry) + targetRewardInDollars / numShares
-        : parseFloat(this.entry) - targetRewardInDollars / numShares
-      ).toFixed(2);
+      const baseProfitMargin = targetRewardInDollars / numShares;
+
+      if (this.isLongPos) {
+        ProfitTarget1_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          1,
+          true
+        );
+        ProfitTarget2_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          2,
+          true
+        );
+        ProfitTarget3_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          3,
+          true
+        );
+        ProfitTarget4_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          4,
+          true
+        );
+      } else {
+        ProfitTarget1_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          1,
+          false
+        );
+        ProfitTarget2_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          2,
+          false
+        );
+        ProfitTarget3_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          3,
+          false
+        );
+        ProfitTarget4_1_Element.textContent = this.getProfitTarget(
+          baseProfitMargin,
+          4,
+          false
+        );
+      }
+    }
+
+    getProfitTarget(baseProfitMargin, RiskRewardRatio, isLong) {
+      if (isLong) {
+        return `$${(
+          parseFloat(this.entry) +
+          baseProfitMargin * RiskRewardRatio
+        ).toFixed(2)}`;
+      } else {
+        return `$${(
+          parseFloat(this.entry) -
+          baseProfitMargin * RiskRewardRatio
+        ).toFixed(2)}`;
+      }
     }
 
     update() {
       if (
         this.accountBalance != null &&
         this.riskPercentage != null &&
-        this.riskRewardRatio != null &&
         this.entry != null &&
         this.stopLoss != null
       ) {
         const maximumRiskInDollars = this.calculateMaxRisk();
         const numShares = this.calculateNumShares(maximumRiskInDollars);
         const positionSize = this.calculatePositionSize(numShares);
-        const profitTarget = this.calculateProfitTarget(numShares);
+        this.calculateAndRenderProfitTargets(numShares);
 
         numSharesElement.textContent = numShares;
         positionSizeElement.textContent = `$${positionSize}`;
-        profitTargetElement.textContent = `$${profitTarget}`;
 
         this.renderWarnings(positionSize);
       }
@@ -135,7 +183,6 @@
   // default values
   accountBalanceElement.value = main.accountBalance;
   riskPercentageElement.value = main.riskPercentage;
-  riskRewardRatioElement.value = main.riskRewardRatio;
 
   // copy helper function
   const copyTextToClipboard = (e) => {
@@ -170,10 +217,6 @@
     main.updateRiskPercentage(e.target.value);
     main.update();
   });
-  riskRewardRatioElement.addEventListener("change", (e) => {
-    main.updateRiskRewardRatio(e.target.value);
-    main.update();
-  });
   entryElement.addEventListener("change", (e) => {
     main.entry = e.target.value;
     main.update();
@@ -188,7 +231,16 @@
   positionSizeElement.addEventListener("click", (e) => {
     copyTextToClipboard(e);
   });
-  profitTargetElement.addEventListener("click", (e) => {
+  ProfitTarget1_1_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  ProfitTarget2_1_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  ProfitTarget3_1_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  ProfitTarget4_1_Element.addEventListener("click", (e) => {
     copyTextToClipboard(e);
   });
 })();

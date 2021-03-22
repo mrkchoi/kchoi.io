@@ -10,10 +10,10 @@ permalink: /trade/
   <form class="ui equal width form mini" autocomplete="off">
     <div class="ui segment">
       <h4 class="ui dividing header">Setup</h4>
-      <div class="ui three column grid">
+      <div class="ui two column grid">
         <div class="column">
           <div class="field">
-            <label for="accountBalance">Acct Balance:</label>
+            <label for="accountBalance">Account Balance:</label>
             <input
               type="text"
               inputmode="decimal"
@@ -37,22 +37,7 @@ permalink: /trade/
             />
           </div>
         </div>
-        <div class="column">
-          <div class="field">
-            <label for="riskRewardRatio">R/R Ratio:</label>
-            <input
-              type="text"
-              inputmode="decimal"
-              class="pure-input-1"
-              id="riskRewardRatio"
-              placeholder="R/R Ratio"
-              autocomplete="off"
-            />
-          </div>
-        </div>
       </div>
-      <!-- </div>
-        <div class="ui segment raised"> -->
       <h4 class="ui dividing header">Trade</h4>
       <div class="ui two column grid">
         <div class="column">
@@ -84,15 +69,12 @@ permalink: /trade/
       </div>
     </div>
   </form>
-
-  <!--  display numShares, positionSize, profitTarget   -->
   <div class="ui segment">
     <table class="ui celled table unstackable">
       <thead>
         <tr>
           <th>Shares</th>
-          <th>Position Size</th>
-          <th>Profit Target</th>
+          <th>Position</th>
         </tr>
       </thead>
       <tbody>
@@ -113,8 +95,46 @@ permalink: /trade/
           >
             -
           </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="ui celled table unstackable">
+      <thead>
+        <tr>
+          <th>1:1</th>
+          <th>2:1</th>
+          <th>3:1</th>
+          <th>4:1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td
-            id="profitTarget"
+            id="profitTarget1_1"
+            data-tooltip="Click to copy"
+            data-position="bottom center"
+            data-variation="mini"
+          >
+            -
+          </td>
+          <td
+            id="profitTarget2_1"
+            data-tooltip="Click to copy"
+            data-position="bottom center"
+            data-variation="mini"
+          >
+            -
+          </td>
+          <td
+            id="profitTarget3_1"
+            data-tooltip="Click to copy"
+            data-position="bottom center"
+            data-variation="mini"
+          >
+            -
+          </td>
+          <td
+            id="profitTarget4_1"
             data-tooltip="Click to copy"
             data-position="bottom center"
             data-variation="mini"

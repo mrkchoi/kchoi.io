@@ -1,7 +1,5 @@
 body {
   font-size: 12px;
-  /* background-color: black;
-  color: white; */
 }
 
 .main {
@@ -12,7 +10,6 @@ body {
 
 h2 {
   text-align: center;
-  /* color: grey; */
 }
 
 .pure-form label {
@@ -22,7 +19,6 @@ h2 {
 
 input.pure-input-1 {
   margin-bottom: 4px !important;
-  /* background-color: black; */
 }
 
 .table {
@@ -63,6 +59,7 @@ input.pure-input-1 {
 .isErrorShown {
   display: block;
 }
+
 
 @media screen and (max-width: 767px) {
   input, select, textarea {

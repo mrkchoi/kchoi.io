@@ -4,8 +4,13 @@
   const riskPercentageElement = document.querySelector("#riskPercentage");
   const entryElement = document.querySelector("#entry");
   const stopLossElement = document.querySelector("#stopLoss");
-  const numSharesElement = document.querySelector("#numShares");
+  const numSharesElement = document.querySelector("#numSharesFull");
   const positionSizeElement = document.querySelector("#positionSize");
+  const spreadInDollarsElement = document.querySelector("#spreadInDollars");
+  const numShares_1_10_Element = document.querySelector("#numShares_1_10");
+  const numShares_1_4_Element = document.querySelector("#numShares_1_4");
+  const numShares_1_2_Element = document.querySelector("#numShares_1_2");
+  const numSharesFull_Element = document.querySelector("#numSharesFull");
   const ProfitTarget1_1_Element = document.querySelector("#profitTarget1_1");
   const ProfitTarget2_1_Element = document.querySelector("#profitTarget2_1");
   const ProfitTarget3_1_Element = document.querySelector("#profitTarget3_1");
@@ -27,12 +32,16 @@
       this.isLongPos;
 
       // outputs
+      this.spreadInDollars;
       this.profitTarget1_1;
       this.profitTarget2_1;
       this.profitTarget3_1;
       this.profitTarget4_1;
       this.positionSize;
-      this.numShares;
+      this.numSharesTenth;
+      this.numSharesQuarter;
+      this.numSharesHalf;
+      this.numSharesFull;
     }
 
     getAccountBalanceFromLocalStorage() {
@@ -62,14 +71,36 @@
     calculateNumShares(maximumRiskInDollars) {
       const differenceFromEntryToStopLoss =
         parseFloat(this.entry) - parseFloat(this.stopLoss);
+      this.spreadInDollars = Math.abs(differenceFromEntryToStopLoss);
       this.isLongPos = differenceFromEntryToStopLoss > 0 ? true : false;
-      return Math.abs(
+      let numShares = Math.abs(
         Math.round(maximumRiskInDollars / differenceFromEntryToStopLoss)
       );
+
+      const remainder = numShares % 40;
+      if (remainder != 0) {
+        numShares -= remainder;
+      }
+
+      this.numSharesFull = numShares;
+      this.numSharesTenth = numShares / 10;
+      this.numSharesQuarter = numShares / 4;
+      this.numSharesHalf = numShares / 2;
+
+      numSharesFull_Element.textContent = this.numSharesFull;
+      numShares_1_10_Element.textContent = this.numSharesTenth;
+      numShares_1_4_Element.textContent = this.numSharesQuarter;
+      numShares_1_2_Element.textContent = this.numSharesHalf;
+
+      return numShares;
     }
 
     calculatePositionSize(numShares) {
       return (numShares * parseFloat(this.entry)).toFixed(2);
+    }
+
+    calculateAndRenderSpreadInDollars() {
+      spreadInDollarsElement.textContent = this.spreadInDollars.toFixed(2);
     }
 
     calculateAndRenderProfitTargets(numShares) {
@@ -126,12 +157,12 @@
 
     getProfitTarget(baseProfitMargin, RiskRewardRatio, isLong) {
       if (isLong) {
-        return `$${(
+        return `${(
           parseFloat(this.entry) +
           baseProfitMargin * RiskRewardRatio
         ).toFixed(2)}`;
       } else {
-        return `$${(
+        return `${(
           parseFloat(this.entry) -
           baseProfitMargin * RiskRewardRatio
         ).toFixed(2)}`;
@@ -146,12 +177,16 @@
         this.stopLoss != null
       ) {
         const maximumRiskInDollars = this.calculateMaxRisk();
-        const numShares = this.calculateNumShares(maximumRiskInDollars);
-        const positionSize = this.calculatePositionSize(numShares);
-        this.calculateAndRenderProfitTargets(numShares);
+        this.calculateNumShares(maximumRiskInDollars);
+        const positionSize = this.calculatePositionSize(this.numSharesFull);
+        this.calculateAndRenderProfitTargets(this.numSharesFull);
+        this.calculateAndRenderSpreadInDollars();
 
-        numSharesElement.textContent = numShares;
-        positionSizeElement.textContent = `$${positionSize}`;
+        numSharesElement.textContent = this.numSharesFull;
+        numSharesElement.textContent = this.numSharesFull;
+        numSharesElement.textContent = this.numSharesFull;
+        numSharesElement.textContent = this.numSharesFull;
+        positionSizeElement.textContent = `${positionSize}`;
 
         this.renderWarnings(positionSize);
       }
@@ -241,6 +276,21 @@
     copyTextToClipboard(e);
   });
   ProfitTarget4_1_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  spreadInDollarsElement.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  numShares_1_10_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  numShares_1_4_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  numShares_1_2_Element.addEventListener("click", (e) => {
+    copyTextToClipboard(e);
+  });
+  numSharesFull_Element.addEventListener("click", (e) => {
     copyTextToClipboard(e);
   });
 })();

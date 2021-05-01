@@ -21,6 +21,10 @@ input.pure-input-1 {
   margin-bottom: 4px !important;
 }
 
+#tradeContainer {
+  align-items: center;
+}
+
 .table {
   width: 100%;
 }
@@ -36,7 +40,7 @@ input.pure-input-1 {
 }
 
 .isCopied {
-  background-color: palegreen !important;
+  background-color: rgba(0, 197, 49, .25) !important;
 }
 
 .positionSizeErrorMessage {
@@ -59,7 +63,6 @@ input.pure-input-1 {
 .isErrorShown {
   display: block;
 }
-
 
 @media screen and (max-width: 767px) {
   input, select, textarea {

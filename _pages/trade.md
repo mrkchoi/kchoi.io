@@ -95,7 +95,6 @@ permalink: /trade/
         <table class="ui celled table unstackable">
           <thead>
             <tr>
-              <th>1/10</th>
               <th>1/4</th>
               <th>1/2</th>
               <th>Full</th>
@@ -103,14 +102,6 @@ permalink: /trade/
           </thead>
           <tbody>
             <tr>
-              <td
-                id="numShares_1_10"
-                data-tooltip="Click to copy"
-                data-position="bottom center"
-                data-variation="mini"
-              >
-                -
-              </td>
               <td
                 id="numShares_1_4"
                 data-tooltip="Click to copy"

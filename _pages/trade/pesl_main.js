@@ -7,7 +7,6 @@
   const numSharesElement = document.querySelector("#numSharesFull");
   const positionSizeElement = document.querySelector("#positionSize");
   const spreadInDollarsElement = document.querySelector("#spreadInDollars");
-  const numShares_1_10_Element = document.querySelector("#numShares_1_10");
   const numShares_1_4_Element = document.querySelector("#numShares_1_4");
   const numShares_1_2_Element = document.querySelector("#numShares_1_2");
   const numSharesFull_Element = document.querySelector("#numSharesFull");
@@ -88,7 +87,6 @@
       this.numSharesHalf = numShares / 2;
 
       numSharesFull_Element.textContent = this.numSharesFull;
-      numShares_1_10_Element.textContent = this.numSharesTenth;
       numShares_1_4_Element.textContent = this.numSharesQuarter;
       numShares_1_2_Element.textContent = this.numSharesHalf;
 
@@ -279,9 +277,6 @@
     copyTextToClipboard(e);
   });
   spreadInDollarsElement.addEventListener("click", (e) => {
-    copyTextToClipboard(e);
-  });
-  numShares_1_10_Element.addEventListener("click", (e) => {
     copyTextToClipboard(e);
   });
   numShares_1_4_Element.addEventListener("click", (e) => {

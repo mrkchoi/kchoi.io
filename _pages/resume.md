@@ -4,76 +4,78 @@ title: "Resume"
 author: "Kenneth"
 permalink: /resume/
 ---
-408-239-3088  
-kennethichoi@gmail.com  
-www.kchoi.io/portfolio  
+
+408-239-3088\
+kennethichoi@gmail.com\
+www.kchoi.io
+
 <a href="https://www.linkedin.com/in/kenneth-choi-42502a35/" target="_blank">LinkedIn</a>  
-<a href="https://github.com/mrkchoi" target="_blank">GitHub</a>  
-  
+<a href="https://github.com/mrkchoi" target="_blank">GitHub</a>
 
+---
 
-## **SKILLS:**
-Hack, PHP, Ruby, Rails, JavaScript, React, Redux / Undux, GraphQL, Relay, PostgreSQL, MongoDB, Express, Node.js, SQL, HTML5, CSS3, Git, AWS, Sockets.io
+**Work Experience:**
 
+**Software Engineer**  
+Facebook\
+Menlo Park, CA\
+_Oct 2019 - June 2021_
 
-## **EXPERIENCE:**
-### **Software Engineer**  
-{:.resume__header}
-Facebook  
-_Oct 2019 - Present_
+- Developed and deployed scalable, high-performance web applications using Hack/PHP, React, Javascript, Undux/Redux, GraphQL, Relay, and HTML5/CSS3 to optimize logistics/supply chain asset management, returning an additional $9M+ in assets to inventory during H1.
+- Designed and implemented key features for remote asset collection in collaboration with business and warehouse operations stakeholders, enabling a successful WFH shift and optimizing logistics/supply chain workflows.
 
-* Contributed to production web applications to facilitate logistics/supply chain asset management using ​Hack/PHP, React, Undux/Redux, JavaScript, GraphQL, Relay, and HTML5/CSS3
-* Developed ​remote asset collection​ workflow resulting in +​ $9mil in assets​ returned to inventory for H1 2020.
-* Coordinated with business and warehouse ops to ensure product alignment on various logistics/supply chain workflows
+**Frontend Developer**  
+Nika Digital Agency\
+San Jose, CA\
+_Oct 2017 - Sep 2019_
 
-### **Marketing Manager**  
-{:.resume__header}
-Nika Digital Agency  
-_Aug 2016 - Sep 2019_  
+- Developed and maintained robust, scalable web applications and landing pages for Fortune 500 clients, including Protiviti and Jabil, maintaining 99.9% uptime and delivering a superior customer experience by reducing page load times by 45% and bounce rate by 12%.
+- Successfully utilized Agile methodology to manage the development lifecycle of complex software products, from discovery to launch, ensuring timely and on-budget delivery.
 
-* Leveraged JavaScript and Excel to implement data analytics dashboards, reducing agency work hours by 16 hours / month.
-* Directed SEM management portfolio to Google Partner status with average +1140% increase in monthly managed spend.
-* Led tactical execution of marketing campaigns to win client partnerships with Microsoft, Amazon Labs, Samsung & Huawei.
+**Marketing Manager**  
+Nika Digital Agency\
+San Jose, CA\
+_Aug 2016 - Oct 2017_
 
+- Automated manual processes and enhanced data insights by developing and deploying data analytics dashboards using Javascript and Excel, resulting in a 16-hour/month reduction in agency work hours.
+- Engineered and deployed scalable SEM campaigns that drove an average 1140% YoY increase in monthly managed spend, catapulting the agency to Google Partner status.
+- Spearheaded strategic and tactical execution of marketing campaigns that secured agency-client partnerships with Microsoft, Amazon Labs, Samsung, and Huawei.
 
-## **PROJECTS:**
-### **Aerbnb**  <a href="https://aerbnb.herokuapp.com" target="_blank">live</a> | <a href="https://github.com/mrkchoi/airbnb_clone" target="_blank">github</a>  
-{:.resume__header}
-(Ruby on Rails, PostgreSQL, React.js, Redux, Sass, Webpack, AWS, Heroku)  
+---
 
-_A pixel-perfect clone of AirBnB (single-page application)_  
-* Integrated Google Maps API with geolocation based search functionality to dynamically present business locations based on user parameters.
-* Utilized AWS S3 and ActiveStorage in Rails to streamline image uploads, reducing server load and allowing for scalability of image services.
-<!-- * Leveraged ActiveRecord in Rails to query a PostgreSQL database and generated JSON views with the jBuilder gem. -->
-* Optimized PostgreSQL database to avoid N+1 queries with ActiveRecord associations by extracting data from multiple tables in a single query.
-<!-- * Implemented model-level validation logic in Rails to identify reservations with overlapping dates and prevent double bookings. -->
+**Previous Experience:**
 
+**Marketing Manager**  
+7Bev Corporation\
+Portland, OR\
+_January 2015 - July 2016_
 
-### **Type Fighter**  <a href="https://typefighter.herokuapp.com" target="_blank">live</a> | <a href="https://github.com/sjaisongyoon/Typin-Strikin-Robots" target="_blank">github</a>  
-{:.resume__header}
-(MongoDB, Express, React, Redux, Node.js, Sockets.io)  
+**Network Administrator**  
+UCLA Marketing\
+Los Angeles, CA\
+_Sep 2008 - Dec 2017_
 
-_A realtime multiplayer game designed to improve typing skills in a fun and competitive manner._  
-* Utilized React Router with front-end and back-end authentication measures to ensure user privacy and autonomy.
-* Integrated Sockets.io with Redux’s global store to render available game rooms across multiple sessions in realtime.
-* Built custom modal framework in React for optimized front-end architecture and efficient development amongst team members.
-<!-- * Utilized Redux's unidirectional data flow with React for predictable state and reliable DOM rendering. -->
-	
-### **Sort Visualizer**  <a href="https://mrkchoi.github.io/sort-visualizer/" target="_blank">live</a> | <a href="https://github.com/mrkchoi/sort-visualizer" target="_blank">github</a>  
-{:.resume__header}
-(D3.js, JavaScript, Axios, Webpack, Babel, Sass)  
+---
 
-_An interactive data visualization for sorting algorithms._  
-* Designed data visualizations in D3.js for dynamic, realtime rendering of Selection, Insertion, Radix, Merge, Quick, Heap, Shell and Bubble Sort algorithms.
-* Optimized codebase with class-based architecture and Object Oriented Programming principles to ensure DRY code.
-* Packaged script to store progressive state of recursive algorithms for efficient DOM rendering.
+**Skills:**
+
+Computer Programming, Web Development, Debugging, Optimizing Code, Integration and Unit Testing
+
+**Languages:**
+
+PHP, Hack, Javascript, React.js, Redux, GraphQL, Relay, Flow/Typescript, Python, Ruby, Rails, SQL, HTML5, CSS3, Git/Mercurial
+
+---
 
 ## **EDUCATION:**
 
-**AppAcademy** - 2019 - Software Engineering  
+**University of California, Los Angeles** \
+BA Sociology\
+2007-2011
 
-**University of California, Los Angeles** - BA Sociology, 2007-2011  
-
+**App Academy (San Francisco)** \
+Software Engineering\
+2019
 
 
 
